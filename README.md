@@ -16,16 +16,16 @@
 ## 项目目录说明
 
 - `./mock` 用来存放mock资源的文件夹
-- `./public` 用来存放项目公共资源的文件夹(不会被打包编译，只会被拷贝到dist目录下)
-- `./src/assets` 用来存放资源文件的文件夹（会被打包编译），如项目涉及的图片
+- `./public` 用来存放资源的文件夹(不会被打包编译，只会被拷贝到dist目录下)
+- `./src/assets` 用来存放资源文件的文件夹（会被打包编译）
 - `./src/components` 用来存放自定义组件的文件夹
-- `./src/models` 用来存放项目数据及操作数据的文件夹
-- `./src/routes` 用来存放项目界面的文件夹
-- `./src/services` 用来存放项目服务的文件夹，如`fetch`请求
-- `./src/utils` 用来存放项目工具类的文件夹，如`fetch`的封装类
-- `./src/index.css` 项目的公共样式
-- `./src/index.js` 项目的入口文件
-- `./src/router.js` 项目的路由配置文件
+- `./src/models` 用来存放数据及操作数据方法的文件夹
+- `./src/routes` 用来存放界面的文件夹
+- `./src/services` 用来存放服务的文件夹，如`fetch`请求
+- `./src/utils` 用来存放工具类的文件夹，如`fetch`的封装类
+- `./src/index.css` 公共样式
+- `./src/index.js` 入口文件
+- `./src/router.js` 路由配置文件
 
 ## 代码风格规范
 
