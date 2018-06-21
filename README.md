@@ -40,6 +40,44 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps)(Page);
 ```
 
+## components
+
+通过 `npm` 安装 `prop-types`，规定props的数据类型
+
+```bash
+$ npm install prop-types --save
+```
+
+```jsx
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+
+import styles from './styles.css';
+
+class View extends PureComponent {
+  static propTypes = {
+    num: PropTypes.number,
+  }
+  static defaultProps = {
+    num: 0,
+  }
+  state = {
+    message: '数字',
+  }
+  render() {
+    const { num } = this.props;
+    const { message } = this.state;
+    return (
+      <section className={styles['layout']}>
+        <span>{ message }：{ num }</span>
+      </section>
+    );
+  }
+}
+
+export default View;
+```
+
 ## 开源协议
 
 [MIT](https://tldrlegal.com/license/mit-license)
