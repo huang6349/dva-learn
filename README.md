@@ -69,8 +69,8 @@ import { connect } from 'dva';
 import styles from './styles.css';
 
 class Page extends PureComponent {
-  const { message } = this.props.app;
   render() {
+    const { message } = this.props.app;
     return (
       <section className={styles['layout']}>
         <span>消息：{ message }</span>
