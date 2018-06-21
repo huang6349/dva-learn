@@ -42,7 +42,7 @@ export default connect(mapStateToProps)(Page);
 
 ## components
 
-通过 `npm` 安装 `prop-types`，规定props的数据类型
+通过 `npm` 安装 `prop-types`，规定 `props` 的数据类型
 
 ```bash
 $ npm install prop-types --save
