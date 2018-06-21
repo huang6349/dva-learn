@@ -13,6 +13,33 @@
 - [组件动态加载](./docs/组件动态加载.md)
 - [编译后的文件名带hash，防止浏览器缓存](./docs/编译后的文件名带hash，防止浏览器缓存.md)
 
+## 代码风格规范
+
+## routes
+```jsx
+import React, { PureComponent } from 'react';
+import { connect } from 'dva';
+
+import styles from './styles.css';
+
+class Page extends PureComponent {
+  const { message } = this.props.app;
+  render() {
+    return (
+      <section className={styles['layout']}>
+        <span>消息：{ message }</span>
+      </section>
+    );
+  }
+}
+
+function mapStateToProps(state) {
+  return { app: state['app'] };
+}
+
+export default connect(mapStateToProps)(Page);
+```
+
 ## 开源协议
 
 [MIT](https://tldrlegal.com/license/mit-license)
