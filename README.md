@@ -78,6 +78,18 @@ class View extends PureComponent {
 export default View;
 ```
 
+增加 `./components/index.js`，使用组件更方便导入
+
+```jsx
+export { default as View } from './View';
+```
+
+组件导入方式
+
+```jsx
+import { View } from '../components';
+```
+
 ## 开源协议
 
 [MIT](https://tldrlegal.com/license/mit-license)
