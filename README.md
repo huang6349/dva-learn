@@ -124,12 +124,12 @@ import { View } from '../components';
 
 ## 相关教程
 
-- [DvaJS的官网](https://dvajs.com/)
-- [DvaJS的Github](https://github.com/dvajs/dva/)
-- [roadhog的Github](https://github.com/sorrycc/roadhog/)
-- [AntDesign的官网](https://ant.design/index-cn/)
-- [react的官网](https://reactjs.org/)
-- [react中文网](https://doc.react-china.org/)
+- [官网 - DvaJS](https://dvajs.com/)
+- [官网 - Ant Design](https://ant.design/index-cn/)
+- [官网 - react](https://reactjs.org/)
+- [中文网 - react](https://doc.react-china.org/)
+- [Github - DvaJS](https://github.com/dvajs/dva/)
+- [Github - roadhog](https://github.com/sorrycc/roadhog/)
 
 ## 开源协议
 
