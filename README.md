@@ -9,6 +9,7 @@
 ## 目录
 
 - [初始化项目](./docs/初始化项目.md)
+- [使用normalize.css重置默认浏览器样式](./docs/使用normalize.css重置默认浏览器样式.md)
 - [使用Antd](./docs/使用Antd.md)
 - [组件动态加载](./docs/组件动态加载.md)
 - [编译后的文件名带hash，防止浏览器缓存](./docs/编译后的文件名带hash，防止浏览器缓存.md)
