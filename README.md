@@ -64,20 +64,18 @@ export default ({ history, app }) => {
 ## routes
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'dva';
 
 import styles from './styles.css';
 
-class Page extends Component {
-  render() {
-    const { message } = this.props.app;
-    return (
-      <section className={styles['layout']}>
-        <span>消息：{ message }</span>
-      </section>
-    );
-  }
+function Page({ app }) {
+  const { message } = app;
+  return (
+    <section className={styles['layout']}>
+      <span>消息：{ message }</span>
+    </section>
+  );
 }
 
 function mapStateToProps(state) {
