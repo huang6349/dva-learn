@@ -135,6 +135,22 @@ export { default as View } from './View';
 import { View } from '../components';
 ```
 
+## models
+
+```jsx
+export default {
+  namespace: 'name',
+  state: {},
+  subscriptions: {},
+  effects: {},
+  reducers: {
+    update_state: function (state, action) {
+      return Object.assign({}, state, action.payload);
+    },
+  },
+};
+```
+
 ## 相关教程
 
 - [官网 - DvaJS](https://dvajs.com/)
