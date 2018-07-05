@@ -1,9 +1,9 @@
 {
-    "hash": true,
-    "html": {
-        "template": "./src/index.ejs"
-    },
-    "extraBabelPlugins": [
-        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
-    ]
+  "hash": true,
+  "html": {
+    "template": "./src/index.ejs"
+  },
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ]
 }
