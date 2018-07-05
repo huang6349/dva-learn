@@ -6,9 +6,9 @@
 
 ```diff
 {
-+  "html": [
++  "html": {
 +    "template": "./src/index.ejs"
-+  ]
++  }
 }
 ```
 
