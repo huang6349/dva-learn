@@ -96,12 +96,12 @@ $ npm install prop-types --save
 ```
 
 ```jsx
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './styles.css';
 
-class View extends PureComponent {
+class View extends Component {
   static propTypes = {
     num: PropTypes.number,
   }
