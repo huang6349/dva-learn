@@ -64,12 +64,12 @@ export default ({ history, app }) => {
 ## routes
 
 ```jsx
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'dva';
 
 import styles from './styles.css';
 
-class Page extends PureComponent {
+class Page extends Component {
   render() {
     const { message } = this.props.app;
     return (
