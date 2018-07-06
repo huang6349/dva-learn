@@ -69,8 +69,7 @@ import { connect } from 'dva';
 
 import styles from './styles.css';
 
-function Page({ app }) {
-  const { message } = app;
+function Page({ message }) {
   return (
     <section className={styles['layout']}>
       <span>消息：{ message }</span>
@@ -79,7 +78,8 @@ function Page({ app }) {
 }
 
 function mapStateToProps(state) {
-  return { app: state['app'] };
+  const { message } = state['app'];
+  return { message: message };
 }
 
 export default connect(mapStateToProps)(Page);
