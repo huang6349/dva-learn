@@ -8,8 +8,8 @@ $ npm install normalize.css --save
 
 ## 使用 `normalize.css`
 
-编辑 `./src/index.js`，加载 `normalize.css`
+编辑 `./src/index.less`，加载 `normalize.css`
 
 ```diff
-+ import '../node_modules/normalize.css/normalize.css';
++ @import '../node_modules/normalize.css/normalize.css';
 ```

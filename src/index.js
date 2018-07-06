@@ -1,7 +1,6 @@
 import dva from 'dva';
 
-import '../node_modules/normalize.css/normalize.css';
-import './index.css';
+import './index.less';
 
 // 1. Initialize
 const app = dva();
