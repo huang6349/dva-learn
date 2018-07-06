@@ -8,6 +8,13 @@ import {
 import dynamic from 'dva/dynamic';
 
 export default ({ history, app }) => {
+  const GlobalLayout = dynamic({
+    app: app,
+    models: () => [
+      import('./layouts/models/layouts'),
+    ],
+    component: () => import('./layouts'),
+  });
   const IndexPage = dynamic({
     app: app,
     models: () => [
@@ -18,8 +25,12 @@ export default ({ history, app }) => {
   return (
     <Router history={history}>
       <Switch>
-        <Route path="/index" exact component={IndexPage}></Route>
-        <Redirect to="/index" />
+        <GlobalLayout>
+          <Switch>
+            <Route path="/index" exact component={IndexPage}></Route>
+            <Redirect to="/index" />
+          </Switch>
+        </GlobalLayout>
       </Switch>
     </Router>
   );

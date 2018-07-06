@@ -1,0 +1,37 @@
+.header {
+  padding: 0 10PX;
+  height: 54px;
+  line-height: 54px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #041725;
+}
+
+.right {
+  float: right;
+  height: 100%;
+}
+
+.action {
+  display: inline-block;
+  cursor: pointer;
+  transform: all .3s;
+  height: 100%;
+}
+
+.action > i {
+  margin-bottom: 2px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.action > .name {
+  margin-left: 8px;
+}
+
+.menu > :global(.ant-dropdown-menu-item > .anticon) {
+  margin-right: 8px;
+}
+
+.menu > :global(.ant-dropdown-menu-item) {
+  width: 160px;
+}
